@@ -10,3 +10,35 @@ Version: 0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+@font-face {
+  font-family: 'Courier Prime';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fonts/cp/regular.woff2') format('woff2'),
+       url('fonts/cp/regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Courier Prime';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fonts/cp/bold.woff2') format('woff2'),
+       url('fonts/cp/bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Courier Prime';
+  font-weight: 400;
+  font-style: italic;
+  src: url('fonts/cp/italic.woff2') format('woff2'),
+       url('fonts/cp/italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Courier Prime';
+  font-weight: 700;
+  font-style: italic;
+  src: url('fonts/cp/bold_italic.woff2') format('woff2'),
+       url('fonts/cp/bold_italic.woff') format('woff');
+}

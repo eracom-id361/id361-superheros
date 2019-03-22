@@ -8,13 +8,10 @@ function id361_style_parent() {
 add_action('wp_enqueue_scripts', 'id361_style_parent');
 
 // ajout de la font Libre Baskerville
-function moodfood_styles() {
-	wp_dequeue_style( 'resonant-google-fonts' );
-	wp_enqueue_style(
-			'libre-Baskerville',
-			'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700', // main.css
-			false, // dependencies
-			null // version
-	);
+// Le thême atomic blocks contient les font : Nunito Sans et Muli. Celle-ci sont chargées depuis google font.
+// atomic-blocks-fonts-css
+
+function id361_styles() {
+	wp_dequeue_style( 'atomic-blocks-fonts' );
 }
-add_action( 'wp_enqueue_scripts', 'moodfood_styles', 11 );
+add_action( 'wp_enqueue_scripts', 'id361_styles', 11 );

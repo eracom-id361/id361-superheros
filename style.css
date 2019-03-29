@@ -49,13 +49,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   src: url('fonts/fp/regular.woff2') format('woff2'),
        url('fonts/fp/regular.woff') format('woff');
 }
-body {
+body, .site, .site-header {
 	font-family: 'Courier Prime', Courier, monospace;
 }
 
 
 h1, h2, h3, h4, h5, h6, .entry-title,
-.entry-content h2
+.entry-content h2,
+.site-header
 {
     font-family: 'Falcon Punch', Arial, sans-serif;
     font-weight: 400;

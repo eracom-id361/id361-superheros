@@ -6,7 +6,7 @@ Author: ID361
 Author URI:
 Template: atomic-blocks
 Description: Theme pour le site Super-héros
-Version: 0.0.2+build201904051608
+Version: 0.0.3+build201904051644
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -56,7 +56,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   src: url('fonts/fp/grad.woff2') format('woff2'),
        url('fonts/fp/grad.woff') format('woff');
 }
-body, .site, .site-header {
+body, .site, .site-header, .main-navigation {
 	font-family: 'Courier Prime', Courier, monospace;
 }
 

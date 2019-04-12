@@ -6,7 +6,7 @@ Author: ID361
 Author URI:
 Template: atomic-blocks
 Description: Theme pour le site Super-héros
-Version: 0.0.1+build201903291628
+Version: 0.0.3+build201904121344
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -49,16 +49,56 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   src: url('fonts/fp/regular.woff2') format('woff2'),
        url('fonts/fp/regular.woff') format('woff');
 }
-body, .site, .site-header {
+@font-face {
+  font-family: 'Falcon Punch Gradient';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fonts/fp/grad.woff2') format('woff2'),
+       url('fonts/fp/grad.woff') format('woff');
+}
+body, .site, .site-header, .main-navigation {
 	font-family: 'Courier Prime', Courier, monospace;
 }
 
+body, .site-header, .site-footer {
+  background-color: #000;
+}
 
-h1, h2, h3, h4, h5, h6, .entry-title,
-.entry-content h2,
+body, button, h1, h2, h3, h4, h5, h6,
+.site-title a, .site-description, 
+.main-navigation a, .main-navigation a:hover {
+  color: #0f0;
+}
+
+h3, h4, h5, h6,
 .site-header
 {
-    font-family: 'Falcon Punch', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Falcon Punch', Arial, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+h1, h2, .entry-title, .entry-content h2
+{
+    font-family: 'Falcon Punch Gradient', Arial, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+/* Donner de la largeur au séparateur */
+.wp-block-separator {
+  transform: scaleX(10);
+  border: solid 1px #0f0;
+  border-bottom-width: 2px
+}
+
+#site-navigation .search-toggle {
+  display: none;
+}
+
+.site-header {
+  border-bottom: 3px solid #0f0;
+}
+
+.site-footer {
+  border-top: 3px solid #0f0;
 }
